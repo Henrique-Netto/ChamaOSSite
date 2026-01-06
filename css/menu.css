@@ -12,6 +12,8 @@
     --font: #414c57;
     --hover: #d9e7f74f;
     --border: #e6e8eb;
+
+    --fundo-azuzinho: linear-gradient(135deg, #0d6efd, #4f9cff);
 }
 
 @-webkit-keyframes slideLeft {
@@ -141,6 +143,33 @@ video {
     padding: 0 1rem;
     margin: 0 auto;
   }
+}
+
+/*** Titulo personalizado ***/
+.app-title {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    color: #1a1f2e;
+    background: linear-gradient(90deg, #007bff, #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.app-title span {
+    font-weight: 300;
+    color: #8b9bb4;
+    -webkit-text-fill-color: #8b9bb4;
+    margin-left: -10px;
+}
+
+.app-title:hover {
+    filter: brightness(1.2);
+    letter-spacing: 0.07em;
 }
 
 .brand {
